@@ -1,0 +1,6 @@
+## Project test related attributes
+project:
+  host:
+    url : 'http://brcinterior.co.in/'
+    name: 'Brc interior'
+    
