@@ -76,7 +76,7 @@
 							src/test/resources/suite.xml
 						</suiteXmlFile>
 					</suiteXmlFiles>
-					<reportsDirectory>/home/jenkins/test-output/${current-timestamp}/mdo-rule-udr/${runid}</reportsDirectory>
+					<reportsDirectory>/var/jenkins_home/test-output/${current-timestamp}/mdo-rule-udr</reportsDirectory>
 				</configuration>
 <!--				<executions>-->
 <!--						<execution>-->
