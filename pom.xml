@@ -16,6 +16,8 @@
 	<description>Spring boot project framework for TestNG</description>
 	<properties>
 		<java.version>11</java.version>
+		<current-timestamp>${maven.build.timestamp}</current-timestamp>
+		<maven.build.timestamp.format>yyyy-MM-dd</maven.build.timestamp.format>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -74,7 +76,7 @@
 							src/test/resources/suite.xml
 						</suiteXmlFile>
 					</suiteXmlFiles>
-					<reportsDirectory>${project.build.directory}/test-output</reportsDirectory>
+					<reportsDirectory>${project.build.directory}/test-output/${current-timestamp}/mdo-rule-udr/${runid}</reportsDirectory>
 				</configuration>
 <!--				<executions>-->
 <!--						<execution>-->
