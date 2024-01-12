@@ -39,6 +39,13 @@
 			<artifactId>selenium-java</artifactId>
 			<version>3.141.59</version>
 		</dependency>
+
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>7.1.0</version>
+			<scope>test</scope>
+		</dependency>
 	</dependencies>
 
 	<build>
@@ -55,6 +62,39 @@
 					</excludes>
 				</configuration>
 			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.22.2</version>
+
+				<configuration>
+					<suiteXmlFiles>
+						<suiteXmlFile>
+							src/test/resources/suite.xml
+						</suiteXmlFile>
+					</suiteXmlFiles>
+					<reportsDirectory>${project.build.directory}/test-output</reportsDirectory>
+				</configuration>
+<!--				<executions>-->
+<!--						<execution>-->
+<!--							<id>integration-test</id>-->
+<!--&lt;!&ndash;							<goals>&ndash;&gt;-->
+<!--&lt;!&ndash;								<goal>integration-test</goal>&ndash;&gt;-->
+<!--&lt;!&ndash;							</goals>&ndash;&gt;-->
+<!--							<configuration>-->
+<!--								<suiteXmlFiles>-->
+<!--									<suiteXmlFile>-->
+<!--										src/test/resources/suite.xml-->
+<!--									</suiteXmlFile>-->
+<!--								</suiteXmlFiles>-->
+<!--								<reportsDirectory>${project.build.directory}/test-output</reportsDirectory>-->
+<!--							</configuration>-->
+<!--						</execution>-->
+
+<!--				</executions>-->
+			</plugin>
+
 		</plugins>
 	</build>
 

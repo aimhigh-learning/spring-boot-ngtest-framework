@@ -21,7 +21,7 @@ public class Login {
 	
 	
 	@Test
-	@DisplayName(value = "Login the componenet....")
+	@DisplayName(value = "Login the component....")
 	void doLogin() {
 		startup.getWebDriver().findElement(By.id("login")).click();
 		
