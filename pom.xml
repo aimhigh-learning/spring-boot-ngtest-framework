@@ -73,7 +73,7 @@
 				<configuration>
 					<suiteXmlFiles>
 						<suiteXmlFile>
-							src/test/resources/suite.xml
+							src/test/resources/bt-suites/bt-validation-process.xml
 						</suiteXmlFile>
 					</suiteXmlFiles>
 					<reportsDirectory>/var/jenkins_home/bt-tests-results/${current-timestamp}/${runid}/mdo-rule-missing</reportsDirectory>
