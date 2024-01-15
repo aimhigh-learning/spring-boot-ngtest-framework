@@ -20,7 +20,7 @@ public class TestNgTestCases {
 
 
     @Test
-    public void test1() {
+    public void repoTest2() {
         Assert.assertEquals(true, true);
     }
 
